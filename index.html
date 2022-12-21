@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="welcome">Welcome to my library!</div>
+    <div id="container">
+
+    </div>
+    <div class="form">
+        <li>
+            <label for="title">Title</label>
+            <input type="text" id="title">
+        </li>
+        <li>
+            <label for="author">Author</label>
+            <input type="text" id="author">
+        </li>
+        <li>
+            <label for="pages">Amount of pages</label>
+            <input type="number" id="pages">
+        </li>
+        <li>
+            <label for="read">Read?</label>
+            <input type="checkbox" id="read">
+        </li>
+    </div>
+    <div class="centerBtn"><button onclick="createCard()" class="add-btn">ADD BOOK</button></div>
+    <script src="./main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,140 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    background-color: beige;
+    gap: 5px;
+}
+
+li {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+#container {
+    height: 50vh;
+    background: rgb(73, 133, 185);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    overflow: scroll;
+    padding: 10px;
+    border-radius: 10px;
+    grid-column: 2 / 7;
+    grid-row: 2 / 6;
+}
+
+.card {
+    height: 25vh;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.welcome {
+    font-size: 48px;
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    grid-column: 2 / 8;
+    grid-row: 1 / 2;
+}
+
+.title {
+    text-align: center;
+    padding: 10px;
+    font-size: 36px;
+    text-decoration: underline;
+}
+
+.title::before {
+    content: '"';
+}
+
+.title::after {
+    content: '"';
+}
+
+.author {
+    color: orange;
+    text-align: center;
+    font-size: 24px;
+}
+
+.pages::before {
+    content: "Pages: "
+}
+
+.pages {
+    text-align: center;
+    font-size: 18px;
+}
+
+.read::before {
+    content: "Read: ";
+    font-size: 18px;
+}
+
+.read {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.form {
+    display: inline-flex;
+    justify-content: space-around;
+    flex-direction: column;
+    background-color: gray;
+    border-radius: 10px;
+    padding-left: 5px;
+    grid-column: 7 / 8;
+    grid-row: 2 / 6;
+    text-align: center;
+}
+
+.add-btn {
+    height: 50px;
+    width: 250px;
+    border-radius: 50px;
+    text-align: center;
+    font-size: larger;
+    font-weight: bold;
+    background-color: yellowgreen;
+}
+
+.centerBtn {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    grid-column: 2 / 8;
+}
+
+#read {
+    accent-color: green;
+    border: 1px solid black;
+}
+
+.dlt-btn {
+    height: 3vh;
+    width: 4vw;
+    text-align: center;
+    background-color: red;
+    border-radius: 10px;
+    box-shadow: none;
+    border: none;
+}
